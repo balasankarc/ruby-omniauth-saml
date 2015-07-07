@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 7.0.50~),
                gem2deb,
                rake,
                ruby-omniauth (>= 1.1),
+               ruby-rack-test,
                ruby-rspec,
                ruby-saml (>= 0.8.1)
 Standards-Version: 3.9.6
@@ -24,5 +25,8 @@ Depends: ruby | ruby-interpreter,
          ruby-saml (>= 0.8.1),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: A generic SAML strategy for OmniAuth.
- A generic SAML strategy for OmniAuth.
+Description: generic SAML strategy for OmniAuth
+ This gem provides a strategy to use SAML with OmniAuth. Security Assertion
+ Markup Language (SAML) is an XML-based, open-standard data format for
+ exchanging authentication and authorization data between parties, in
+ particular, between an identity provider and a service provider.

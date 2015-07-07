@@ -1,0 +1,28 @@
+Source: ruby-omniauth-saml
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-omniauth (>= 1.1),
+               ruby-rspec,
+               ruby-saml (>= 0.8.1)
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-omniauth-saml.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-omniauth-saml.git
+Homepage: https://github.com/PracticallyGreen/omniauth-saml
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-omniauth-saml
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-omniauth (>= 1.1),
+         ruby-saml (>= 0.8.1),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: A generic SAML strategy for OmniAuth.
+ A generic SAML strategy for OmniAuth.
